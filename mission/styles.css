@@ -1,0 +1,47 @@
+/* * {
+    border: 1px solid black;
+} */
+
+body {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 600px;
+    display: flex;
+    border: 1px solid black;
+    margin: 50px;
+    padding: 5% 15%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: .1em;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: #006EB6;
+    text-align: center;
+    letter-spacing: .2em;
+    font-size: 15px;
+    border-bottom: 1px solid lightgray; 
+}
+
+div {
+    margin-top: 2%;
+}
+
+ol li {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 130px;
+}
+
+
+.box {
+    display: grid;
+    justify-content: center;
+}
