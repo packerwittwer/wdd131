@@ -74,13 +74,13 @@ footer {
     padding: 1%;
 }
 
-.menu {
+.menu-list {
     display: flex;
     flex-wrap: wrap;
 }
 
 @media (max-width: 400px) {
-    .menu {
+    .menu-list {
         display: block;
     }
 }
@@ -100,4 +100,8 @@ img {
     margin: 5%;
     border: 5px solid white;
     box-shadow: 3px 3px 3px #5A5B5B;
+}
+
+.hide {
+    display: none;
 }
