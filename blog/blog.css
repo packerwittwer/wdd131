@@ -53,19 +53,27 @@ p {
     font-size: 1.3em;
 }
 
-main {
-    display: flex;
-}
-
-main > div {
-    flex: 1;
+section {
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    width: 80%;
 }
 
 .book img {
-    max-width: 500px;
+    max-width: 300px;
     margin: 0 auto;
     display: block;
     border: 10px solid #964734;
+}
+
+.book {
+    text-align: center;
+}
+
+.book p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .skiptocontent a {
@@ -76,4 +84,14 @@ main > div {
 .skiptocontent a:focus {
     position: absolute;
     top: 0;
+}
+
+.book_info, .book {
+    display: grid;
+    gap: 20px;
+}
+
+main {
+    display: flex;
+    grid-template-columns: 3fr 1fr;
 }
