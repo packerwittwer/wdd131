@@ -67,3 +67,13 @@ main > div {
     display: block;
     border: 10px solid #964734;
 }
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+}
+
+.skiptocontent a:focus {
+    position: absolute;
+    top: 0;
+}
