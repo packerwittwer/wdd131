@@ -1,27 +1,30 @@
 const articles = [
 	{
 		id: 1,
-		title: 'Septimus Heap Book One: Magyk',
-		date: 'July 5, 2022',
+		title: 'The Lord of the Rings: 50th Anniversary One Volume Edition',
+		date: 'October 21, 2004',
 		description:
-			'If you enjoy stories about seventh sons of seventh sons and magyk this is the book for you.',
-		imgSrc: 'https://upload.wikimedia.org/wikipedia/en/5/5f/Magkycover2.jpg',
-		imgAlt: 'Book cover for Septimus Heap 1',
-		ages: '10-14',
+			'"The Lord of the Rings" is a high-fantasy novel series written by English author J.R.R. Tolkien. The story began as a sequel to Tolkien\'s 1937 fantasy novel "The Hobbit", but eventually developed into a much larger work. The series is set in the fictional world of Middle-earth and follows the quest of the hobbit Frodo Baggins and his companions to destroy the One Ring.',
+		imgSrc: 'images/lotr_cover.webp',
+		imgAlt: 'Book cover for LoTR',
+		ages: '12+',
 		genre: 'Fantasy',
-		stars: '****'
+		stars: '⭐⭐⭐⭐⭐'
 	},
 	{
 		id: 2,
-		title: 'Magnus Chase Book One: Sword of Summer',
-		date: 'December 12, 2021',
+		title: 'Dune',
+		date: 'Augues 1965',
 		description:
-			'The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.',
+			'"Dune" is a science fiction novel written by Frank Herbert. Set in the distant future amidst a sprawling feudal interstellar empire where planetary fiefdoms are controlled by noble Houses, the story explores the complex and multi-layered interactions of politics, religion, ecology, technology, and human emotion. The narrative primarily follows Paul Atreides, a young noble boy, who is thrust into a dangerous political intrigue when his family relocates to the desert planet Arrakis, the only source of the most valuable substance in the universe, "the spice". A tale of betrayal and survival, "Dune" is a timeless classic in the genre of science fiction.',
 		imgSrc:
-			'https://books.google.com/books/content/images/frontcover/xWuyBAAAQBAJ?fife=w300',
-		imgAlt: 'Book cover for Magnus Chase 1',
-		ages: '12-16',
-		genre: 'Fantasy',
-		stars: '⭐⭐⭐⭐'
+			'images/dune_cover.webp',
+		imgAlt: 'Book cover for Dune',
+		ages: '12+',
+		genre: 'Science Fiction',
+		stars: '⭐⭐⭐⭐⭐'
+	},
+	{
+		
 	}
 ]
