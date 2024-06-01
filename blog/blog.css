@@ -47,12 +47,12 @@ h1 {
 h2 {
     font-size: 200%;
     color: #024950;
+    text-align: center;
 }
 
 p {
     font-size: 1.3em;
 }
-
 
 .skiptocontent a {
     position: absolute;
@@ -64,53 +64,17 @@ p {
     top: 0;
 }
 
-/* section {
-    display: grid;
-    grid-template-columns: .5fr 2fr;
-    width: 80%;
-}
-
-.book_info img {
-    max-width: 300px;
-    margin: 0 auto;
-    display: block;
-    border: 10px solid #964734;
-}
-
-.book_info {
-    text-align: center;
-}
-
-.book_info p {
+.book p {
     max-width: 800px;
     margin: 0 auto;
     padding-bottom: 50px;
+    padding-top: 25px;
 }
-
-.book_info, .book {
-    display: grid;
-    /* gap: 30px; */
-/* }
-
-.book p {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.article_info {
-    padding-bottom: 5px;
-    display: grid;
-} */
 
 main {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
 }
-
-/* section {
-    display: flex;
-    flex-direction: column;
-} */
 
 .book-container {
     display: grid;
