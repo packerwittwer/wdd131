@@ -66,7 +66,7 @@ p {
 
 .book p {
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
     padding-bottom: 50px;
     padding-top: 25px;
 }
@@ -86,4 +86,12 @@ img {
     margin: 0 auto;
     display: block;
     border: 10px solid #964734;
+}
+
+.info {
+    text-align: right;
+}
+
+.info p:first-of-type {
+    font-size: 1.5em;
 }

@@ -24,7 +24,46 @@ const articles = [
 		genre: 'Science Fiction',
 		stars: '⭐⭐⭐⭐⭐'
 	},
-	{
-		
-	}
 ]
+
+var articleSection = document.querySelector('.book-container');
+
+articles.forEach(article => {
+	let book = document.createElement('div')
+	book.className = 'book';
+	let info = document.createElement('div')
+	info.className = 'info'
+
+	let infoContent = `<p>${article.date}</p>
+						<p>Recommended Age: ${article.ages}</p>
+						<p>${article.genre}</p>
+						<p>${article.stars}</p>`
+					   
+	let bookContent = `<h2>${article.title}</h2>
+                    	<img src="${article.imgSrc}" alt="${article.imgAlt}">
+                    	<p>${article.description}</p>`
+
+	info.innerHTML = infoContent
+	let infoHolder = document.getElementById('info')
+
+	book.innerHTML = bookContent
+	let bookHolder = document.getElementById('book')
+
+	infoHolder.appendChild(info)
+	bookHolder.appendChild(book)
+});
+
+
+// articles.forEach((article)=>{
+//     // <article> </article>
+//     let book = document.createElement('article')
+
+//     let articleContent = `<h1>${article.title}</h1>
+//                           <p>${article.description}</p>
+//     `
+//     book.innerHTML = articleContent
+
+//     let holder = document.getElementById('books')
+//     holder.appendChild(book)
+
+//   })
