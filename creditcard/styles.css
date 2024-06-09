@@ -1,0 +1,135 @@
+* {
+    /* border: 1px solid black; */
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+form{
+    position: relative;
+    display: grid;
+    grid-template-columns: 130px 395px 110px;
+    grid-template-rows: 40px 295px 25px 40px;
+    gap: 10px;
+}
+
+.card-front {
+    width: 525px;
+    height: 325px;
+    border-radius: 3%;
+    background-color: lightgrey;
+    z-index: 1;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+    grid-column: 1/3;
+    position: relative;
+    font-size: 20px;
+}
+
+.card-back {
+    width: 525px;
+    height: 325px;
+    border-radius: 3%;
+    background-color: lightgray;
+    grid-column: 2/4;
+    position: relative;
+    font-size: 20px;
+}
+
+.submit {
+    font-size: 1.3em;
+    border-radius: 30px;
+    border: 3px outset rgb(165, 165, 165);
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.submit:hover {
+    background-color: gray;
+}
+
+#cvc-label {
+    position: absolute;
+    bottom: 70px;
+    right: 24px;
+    font-size: 1.2em;
+}
+
+#cvc-num {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    max-width: 55px;
+    height: 25px;
+    font-size: 1.1em;
+}
+
+.barcode {
+    background-color: rgb(48, 47, 47);
+    height: 50px;
+    margin-top: 25px;
+}
+
+.total{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 1.5em;
+    color: red;
+}
+
+.card-image {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    transform: scale(1.3);
+}
+
+.card-number-label {
+    position: absolute;
+    top: 110px;
+    left: 30px;
+}
+
+#card-number {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    height: 25px;
+}
+
+.card-owner-label {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+}
+
+#card-owner {
+    position: absolute;
+    top: 220px;
+    left: 30px;
+    height: 25px;
+}
+
+.exp-date {
+    position: absolute;
+    top: 200px;
+    right: 54px;
+}
+
+#exp-month {
+    position: absolute;
+    top: 220px;
+    right: 120px;
+    height: 30px;
+}
+
+#exp-day {
+    position: absolute;
+    top: 220px;
+    right:55px;
+    height: 30px;
+    width: 50px;
+
+}
