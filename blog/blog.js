@@ -14,7 +14,7 @@ const articles = [
 	{
 		id: 2,
 		title: 'Dune',
-		date: 'Augues 1965',
+		date: 'August 1965',
 		description:
 			'"Dune" is a science fiction novel written by Frank Herbert. Set in the distant future amidst a sprawling feudal interstellar empire where planetary fiefdoms are controlled by noble Houses, the story explores the complex and multi-layered interactions of politics, religion, ecology, technology, and human emotion. The narrative primarily follows Paul Atreides, a young noble boy, who is thrust into a dangerous political intrigue when his family relocates to the desert planet Arrakis, the only source of the most valuable substance in the universe, "the spice". A tale of betrayal and survival, "Dune" is a timeless classic in the genre of science fiction.',
 		imgSrc:
@@ -24,15 +24,28 @@ const articles = [
 		genre: 'Science Fiction',
 		stars: '⭐⭐⭐⭐⭐'
 	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+			"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc:
+			"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
+	}
 ]
 
-var articleSection = document.querySelector('.book-container');
+var articleSection = document.querySelector('.article');
 
 articles.forEach(article => {
-	let book = document.createElement('div')
-	book.className = 'book';
 	let info = document.createElement('div')
 	info.className = 'info'
+	let book = document.createElement('div')
+	book.className = 'book';
 
 	let infoContent = `<p>${article.date}</p>
 						<p>Recommended Age: ${article.ages}</p>
@@ -44,13 +57,15 @@ articles.forEach(article => {
                     	<p>${article.description}</p>`
 
 	info.innerHTML = infoContent
-	let infoHolder = document.getElementById('info')
+	// let infoHolder = document.getElementsByClassName('info')
 
 	book.innerHTML = bookContent
-	let bookHolder = document.getElementById('book')
+	// let bookHolder = document.getElementsByClassName('book')
 
-	infoHolder.appendChild(info)
-	bookHolder.appendChild(book)
+	// infoHolder.appendChild(info)
+	// bookHolder.appendChild(book)
+	articleSection.append(info)
+	articleSection.append(book)
 });
 
 

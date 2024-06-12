@@ -1,10 +1,11 @@
 * {
     /* margin: 0 auto; */
-    /* border: 1px solid black; */
+    /* border: 1px solid black */
 }
 
 nav {
     font-size: 150%;
+    margin-bottom: 40px;
 }
 
 .nav_links {
@@ -90,8 +91,16 @@ img {
 
 .info {
     text-align: right;
+    border-right: 1px solid #0fa4af;
+    padding-right: 20px;
 }
 
 .info p:first-of-type {
     font-size: 1.5em;
+    padding-top: 10px;
+}
+
+.filter {
+    border: 1px solid #0fa4af;
+    margin-right: 40px;
 }
