@@ -120,4 +120,8 @@ footer > a {
     }
 }
 
-@media (max-width)
+@media (max-width: 500px) {
+    .description {
+        display: none;
+    }
+}
