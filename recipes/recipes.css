@@ -41,11 +41,13 @@ form {
 }
 
 form > input{
-    width: 95%;
+    width: 100%;
+    height: 30px;
 }
 
 .search-icon {
-    max-width: 15px;
+    max-width: 30px;
+    height: 23px;
 }
 
 .category {
@@ -70,7 +72,8 @@ section {
 }
 
 section > img {
-    max-width: 600px;
+    max-width: 30%;
+    height: auto;
 }
 
 h2 {
@@ -87,8 +90,8 @@ h2 {
                         /* FOOTER */
 
 footer {
-    padding: 30px;
     display: flex;
+    align-items: center;
 }
 
 a > img {
@@ -97,4 +100,24 @@ a > img {
 
 footer > a {
     margin-right: 50%;
+    margin-left: 5%;
 }
+
+@media (max-width: 1060px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer > a {
+        margin-right: 0;
+        margin-left: 0; 
+        order: 1;
+    }
+
+    a > img {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width)
