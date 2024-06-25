@@ -96,11 +96,16 @@ footer {
 
 a > img {
     width: 50px;
+    margin-top: 30px;
 }
 
 footer > a {
-    margin-right: 50%;
+    /* margin-right: 50%; */
     margin-left: 5%;
+}
+
+.social {
+    margin-right: 5%;
 }
 
 @media (max-width: 1060px) {
@@ -117,6 +122,10 @@ footer > a {
 
     a > img {
         margin-top: 30px;
+    }
+
+    .social {
+        margin: auto;
     }
 }
 
