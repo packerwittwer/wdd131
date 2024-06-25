@@ -1,7 +1,95 @@
 * {
     margin: 0 auto;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'PumpkinPieLattesBold';
+    src: url('fonts/PumpkinPieLattesBold-WyGGz.ttf');
+}
+
+                        /* HEADER */
+header {
+    display: flex;
+    max-width: fit-content;
+    margin: 30px auto;
+}
+
+h1, h2 {
+    font-family: 'PumpkinPieLattesBold';
+}
+
+h1 {
+    padding-top: 40px;
+    font-size: 4em;
+}
+
+header > img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+                        /* MAIN */
+form {
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(200, 198, 198);
+    padding-bottom: 20px;
+}
+
+form > input{
+    width: 95%;
 }
 
 .search-icon {
-    max-width: 10px;
+    max-width: 15px;
+}
+
+.category {
+    border: 1px solid black;
+    max-width: fit-content;
+    padding: 5px 10px;
+    margin-left: 0;
+}
+
+section {
+    display: flex;
+
+    margin: 20px 5% 0%;
+    padding: 10px;
+}
+
+.recipe-info {
+    margin: 0;
+    padding-left: 10px;
+    flex: 1;
+}
+
+section > img {
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #226d95;
+    padding-top: 30px;
+}
+
+.stars {
+    padding-bottom: 30px;
+}
+
+
+                        /* FOOTER */
+
+footer {
+    padding: 30px;
+    /* display: flex; */
+}
+
+a > img {
+    max-width: 50px;
 }
