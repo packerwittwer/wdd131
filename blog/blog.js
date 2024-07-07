@@ -43,7 +43,7 @@ var articleSection = document.querySelector('.article');
 
 articles.forEach(article => {
 	let info = document.createElement('div')
-	info.className = 'info'
+	info.className = 'info';
 	let book = document.createElement('div')
 	book.className = 'book';
 

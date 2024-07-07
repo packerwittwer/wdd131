@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
     <link rel="icon" href="images/images/recipe-book.png">
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
     <link rel="stylesheet" href="recipes.css">
     <meta property="og:title" content="Recipes">
     <meta property="og:type" content="articles" />
@@ -16,33 +16,26 @@
 </head>
 <body>
     <header>
-        <img src="images/images/recipe-book.png" alt="recipe-book-logo">
+        <img src="images/recipe-book.png" alt="recipe-book-logo">
         <h1>RecipeBook</h1>
     </header>
     <main>
-        <form action="#" method="get">
+        <form id="search-bar" action="#" method="get">
             <input type="search" name="query" placeholder="Search recipes...">
-            <button class="search" type="submit" aria-label="search">
-                <img class="search-icon" src="images/images/search.svg" alt="search icon">
+            <button id="search-button" class="search" type="submit" aria-label="search">
+                <img class="search-icon" src="images/search.svg" alt="search icon">
             </button>
         </form>
-        <section class="recipes">
-            <img src="images/images/escalopes-de-poulet-a-la-creme.webp" alt="entree">
-            <div class="recipe-info">
-                <p class="category">dinner</p>
-                <h2>Escalope de Poulet a la Creme (Chicken with Cream)</h2>
-                <!-- this needs a change⬇️ I'm not sure what the instructions are asking-->
-                <p class="stars">⭐⭐⭐⭐☆</p>
-                <p class="description">Delicious quick and easy creamy rice dish. The mustard, mushrooms, and lemon all blend together wonderfully.</p>
-            </div>
+        <section id="recipes">
+            
         </section>
     </main>
     <footer>
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
         <div class="social">
-            <a href="#"><img src="images/images/instagram_icon.svg" alt="instagram icon"></a>
-            <a href="#"><img src="images//images/youtube_icon.svg" alt="youtube icon"></a>
-            <a href="#"><img src="images/images/pinterest_icon.svg" alt="pinterest icon"></a>
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
         </div>
     </footer>
 </body>
