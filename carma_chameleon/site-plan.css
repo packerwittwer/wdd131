@@ -42,6 +42,10 @@ font-style: normal;
   --nav-hover-background-color: var(--primary-color);
 }
 
+.wireframe {
+    max-width: 100%;
+}
+
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
