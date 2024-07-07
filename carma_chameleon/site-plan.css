@@ -20,7 +20,7 @@ font-style: normal;
   --primary-color: #757575;
   --secondary-color: #c2f261;
   --accent1-color: #30f2f2;
-  --accent2-color: #363535;
+  /* --accent2-color: #363535; */
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Grechen Fuemen";
