@@ -56,13 +56,20 @@ let searchButton = document.getElementById('search-button');
 
 searchButton.addEventListener('click', function(event) {
     let searchText = document.getElementById('search-bar').value.toLowerCase();
-    filterRecipes(searchText);
+    let filteredRecipes = filterRecipes(searchText);
+    recipeBox.innerHTML = ''
+    
+    filteredRecipes.forEach(function(recipe) {
+        recipeBox.innerHTML += recipeTemplate(recipe);
+    });
 })
 
 function filterRecipes(query) {
-    let filteredRecipes = recipes.filter(recipe => recipe.description.toLowerCase().includes(query) ||
+    console.log(recipes[0].tags);
+    let filteredRecipes = recipes.filter(recipe => 
+    recipe.description.toLowerCase().includes(query) ||
     recipe.name.toLowerCase().includes(query) ||
-    recipe.tagElement.toLowerCase().includes(query) ||
+    recipe.tags.some(tag => tag.toLowerCase().includes(query)) ||
     recipe.recipeIngredient.some(ingredient => ingredient.toLowerCase().includes(query)));
 
     filteredRecipes.sort();
