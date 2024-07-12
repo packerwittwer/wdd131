@@ -1,59 +1,39 @@
+import { submissionTemplate, participantTemplate } from "./templates.js";
+
 let participantCount = 1;
-
-let button = document.getElementById('add')
-button.addEventListener('click', participantTemplate);
-
 var participantSection = document.querySelector('.participants')
 
+let button = document.getElementById('add')
+button.addEventListener('click', () => {
+    participantCount = participantTemplate(participantCount)
+});
 
 
-function participantTemplate(){
-    participantCount++;
-    
-    let participants = document.createElement('section')
-    participants.className = `participant${participantCount}`
+const form = document.getElementById('form');
 
-    let participantContent = `<p>Participant ${participantCount}</p>
-                                <div class="item">
-                                    <label for="fname"> First Name<span>*</span></label>
-                                    <input id="fname" type="text" name="fname" value="" required />
-                                </div>
-                                <div class="item activities">
-                                    <label for="activity">Activity #<span>*</span></label>
-                                    <input id="activity" type="text" name="activity" />
-                                </div>
-                                <div class="item">
-                                <label for="fee">Fee ($)<span>*</span></label>
-                                <input id="fee" type="number" name="fee" />
-                                </div>
-                                <div class="item">
-                                <label for="date">Desired Date <span>*</span></label>
-                                <input id="date" type="date" name="date" />
-                                </div>
-                                <div class="item">
-                                <p>Grade</p>
-                                <select>
-                                    <option selected value="" disabled selected></option>
-                                    <option value="1">1st</option>
-                                    <option value="2">2nd</option>
-                                    <option value="3">3rd</option>
-                                    <option value="4">4th</option>
-                                    <option value="5">5th</option>
-                                    <option value="6">6th</option>
-                                    <option value="7">7th</option>
-                                    <option value="8">8th</option>
-                                    <option value="9">9th</option>
-                                    <option value="10">10th</option>
-                                    <option value="11">11th</option>
-                                    <option value="12">12th</option>
-                                </select>
-                                </div>`
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); //prevent default submission behavior
 
-    participants.innerHTML = participantContent;
+    //create an array tha contains every fee on the page
+    let feeInputs = document.querySelectorAll('input[name="fee"]');
+    feeInputs = [...feeInputs];
 
-    participantSection.append(participants)
-}
+    //get the total fee
+    let totalFee = 0;
+    feeInputs.forEach(fee => {
+        totalFee += Number(fee.value);
+    });
 
-let form = document.getElementById('form');
+    //hide the form
+    form.classList.add('hide');
 
-form.addEventListener('submit', button)
+    //get the adult name
+    const adultNameElement = document.getElementById('adult_name');
+    const adultName = adultNameElement.value;
+
+    submissionTemplate({
+        adultName,
+        participantCount,
+        totalFee
+    });
+})

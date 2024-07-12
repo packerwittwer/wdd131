@@ -35,6 +35,9 @@
   }
   fieldset {
     margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
   input,
   select,
@@ -163,5 +166,13 @@
   
 
 section > p {
+  font-size: 1.5em;
+}
+
+.hide {
+  display: none;
+}
+
+#submission-message {
   font-size: 1.5em;
 }
