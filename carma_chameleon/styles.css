@@ -1,0 +1,112 @@
+* {
+    /* background-color: black; */
+    /* margin: 0 auto; */
+    /* border: 1px solid black; */
+}
+
+header {
+    display: flex;
+    background-color: #757575;
+    text-align: center;
+}
+
+.logo {
+    border-radius: 200px;
+    max-width: 110px;
+    padding: 10px;
+}
+
+.logo-box {
+    max-width: fit-content;
+}
+
+a {
+    flex-grow: 1;
+    justify-items: center;
+    align-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: "Grechen Fuemen";
+    font-size: 60px;
+    margin: 0 auto;
+    padding-right: 70px;
+}
+
+@media (max-width: 760px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+h3 {
+    font-family: "Grechen Fuemen";
+}
+
+ul {
+    display: flex;
+    background-color: #c2f261;
+    margin: 0 auto;
+    padding-left: 12px;
+}
+
+ul a {
+    max-width: fit-content;
+    padding: 0px 20px;
+}
+
+ul a:hover {
+    background-color: #757575;
+    color: white;
+    border-radius: 50px;
+}
+
+form {
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    height: 30px;
+    width: 500px;
+}
+
+@media (max-width: 950px) {
+    form input {
+        width: 100%;
+    }
+}
+
+.search-icon {
+    max-width: 20px;
+}
+
+#search-button {
+    max-height: 30px;
+}
+
+hr {
+    border-bottom: 5px solid #30f2f2;
+    margin-top: 50px;
+    max-width: 80%;
+}
+
+body { 
+    margin: 0 auto;
+}
+
+main {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Grechen Fuemen';
+    font-size: 3em;
+}
