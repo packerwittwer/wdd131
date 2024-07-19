@@ -163,3 +163,58 @@ footer div {
     margin-left: auto;
     margin-right: 10px;
 }
+
+.inventory-and-form {
+    display: flex;
+    max-width: 80%;
+    gap: 20px;
+}
+
+section div {
+    border: 1px solid black;
+    flex-grow: 4;
+}
+
+#inventory {
+    flex-grow: 2;
+}
+
+#rental-form {
+    border: 2px solid black;
+    width: 400px;
+    min-width: 200px;
+    max-width: 200px;
+    margin-top: 30px;
+}
+
+.inventory-box {
+    border: none;
+    display: flex;
+    max-width: 95%;
+    max-height: 200px;
+}
+
+.inventory-box img {
+    max-width: 400px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.car-info p:nth-child(-n+5) {
+    line-height: .2;
+}
+
+.car-info {
+    padding: 0 10px 0;
+    min-width: 150px;
+}
+
+@media (max-width: 1305px) {
+    .description {
+        display: none;
+    }
+
+    .car-info p:nth-child(-n+5) {
+        line-height: 1;
+    }
+}
