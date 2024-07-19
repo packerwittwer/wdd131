@@ -45,19 +45,19 @@ h3 {
     font-family: "Grechen Fuemen";
 }
 
-ul {
+.nav {
     display: flex;
     background-color: #c2f261;
     margin: 0 auto;
     padding-left: 12px;
 }
 
-ul a {
+div a {
     max-width: fit-content;
     padding: 0px 20px;
 }
 
-ul a:hover {
+div a:hover {
     background-color: #757575;
     color: white;
     border-radius: 50px;
@@ -242,4 +242,9 @@ section div {
     display: block;
     margin: 30px auto;
     height: 30px
+}
+
+#submission-box {
+    text-align: center;
+    font-size: 1.3em;
 }

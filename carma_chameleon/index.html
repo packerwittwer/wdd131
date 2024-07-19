@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>
+    <script src="home.js" type="module"></script>
+    
 </head>
 <body>
     <header>
@@ -20,16 +21,16 @@
         </a>
     </header>
     <nav>
-        <ul>
+        <div class="nav">
             <a href="index.html"><h3>HOME</h3></a>
             <a href="inventory.html"><h3>INVENTORY</h3></a>
-            <form action="inventory.html" method="get">
-                <input type="search" placeholder="Search">
+            <form id="search-bar" action="inventory.html" method="get">
+                <input id="search" type="search" placeholder="Search">
                 <button id="search-button" type="submit">
                     <img class="search-icon" src="images/search-icon.jpg" alt="search icon">
                 </button>
             </form>
-        </ul>
+        </div>
     </nav>
     <hr>
     <main>

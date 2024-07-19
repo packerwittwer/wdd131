@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>
+    
 </head>
 <body>
     <header>
@@ -20,16 +20,16 @@
         </a>
     </header>
     <nav>
-        <ul>
+        <div class="nav">
             <a href="index.html"><h3>HOME</h3></a>
             <a href="inventory.html"><h3>INVENTORY</h3></a>
-            <form action="inventory.html" method="get">
-                <input type="search" placeholder="Search">
+            <form id="search-bar" action="#" method="get">
+                <input id="search" type="search" placeholder="Search">
                 <button id="search-button" type="submit">
                     <img class="search-icon" src="images/search-icon.jpg" alt="search icon">
                 </button>
             </form>
-        </ul>
+        </div>
     </nav>
     <hr>
 
@@ -38,31 +38,22 @@
     <main class="inventory-and-form">
         <section id="inventory">
             <h2>Inventory</h2>
-            <div class="inventory-box">
-                <img src="images/2020-accord-hero.jpg" alt="honda accord">
-                <div class="car-info">
-                    <p>Year: 2020</p>
-                    <p>Make: Honda</p>
-                    <p>Model: Accord</p>
-                    <p>MPG: 30 City / 38 Hwy</p>
-                    <p>$28/Day</p>
-                    <p class="description">Description: The 2020 Honda Accord is a midsize sedan known for its refined driving experience, spacious interior, and impressive fuel efficiency. It features a sleek design with a comfortable and well-equipped cabin, and many advanced safety features.</p>
-                </div>
-            </div>
+                <!-- car boxes go here -->
         </section>
+        <p id="submission-box"></p>
         <div id="rental-and-payment">
             <h2>Rental Form</h2>
-            <form id="rental-form" action="">
+            <form id="rental-form" action="#">
                 <label for="rental-name">Name:</label>
                 <input class="input" type="text" id="rental-name" name="rental-name">
                 <br>
                 <label for="email">Email:</label>
                 <input class="input" type="text" id="email" name="email">
                 <br>                
-                <label for="id">Car Id:</label>
-                <input class="input" type="text" id="id" name="id">
+                <label for="id">Vehicle:</label>
+                <input class="input" type="text" id="id" name="id" placeholder="year make model">
                 <br>
-                <label for="">Rental Length (Days):</label>
+                <label for="rental-length">Rental Length (Days):</label>
                 <input class="length" type="number" id="rental-length" name="rental-length">
                 <br>
                 <button id="submit" type="submit">Submit</button>
@@ -87,5 +78,6 @@
             </a>
         </div>
     </footer>
+    <script src="./inventory.js" type="module"></script>
 </body>
 </html>
