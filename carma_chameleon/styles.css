@@ -1,7 +1,7 @@
 * {
     /* background-color: black; */
     /* margin: 0 auto; */
-    /* border: 1px solid black; */
+    /* border: 1px solid black */
 }
 
 header {
@@ -103,11 +103,40 @@ body {
 main {
     max-width: 50%;
     margin: 0 auto;
-    text-align: center;
 }
 
 h2 {
     font-family: 'Grechen Fuemen';
     font-size: 3em;
+    text-align: center;
 }
 
+#inv-button {
+    height: 40px;
+    font-size: 1.3em;
+    font-family: 'Grechen Fuemen';
+    padding: 0px 15px;
+    margin: 10px 0;
+}
+
+div img {
+    max-width: 400px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.car-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+div div {
+    border: 1px solid black;
+    background-color: #c2f261;
+}
+
+.car-info-home {
+    padding-left: 10px;
+    font-family: 'Grechen Fuemen';
+    background-color: #c2f261;
+}
