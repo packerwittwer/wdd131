@@ -96,8 +96,9 @@ hr {
     max-width: 80%;
 }
 
-body { 
+body {
     margin: 0 auto;
+    height: 100vh;
 }
 
 main {
@@ -139,4 +140,12 @@ div div {
     padding-left: 10px;
     font-family: 'Grechen Fuemen';
     font-size: 1.2em;
+}
+
+footer {
+    background-color: #757575;
+}
+
+footer p {
+    padding: 20px 10px;
 }
