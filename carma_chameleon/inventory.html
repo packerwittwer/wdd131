@@ -47,10 +47,28 @@
                     <p>MPG: 30 City / 38 Hwy</p>
                     <p>$28/Day</p>
                     <p class="description">Description: The 2020 Honda Accord is a midsize sedan known for its refined driving experience, spacious interior, and impressive fuel efficiency. It features a sleek design with a comfortable and well-equipped cabin, and many advanced safety features.</p>
+                    <p>ID: 28346</p>
                 </div>
             </div>
         </section>
-        <form id="rental-form" action="">Form goes here</form>
+        <div id="rental-and-payment">
+            <h2>Rental Form</h2>
+            <form id="rental-form" action="">
+                <label for="rental-name">Name:</label>
+                <input class="input" type="text" id="rental-name" name="rental-name">
+                <br>
+                <label for="email">Email:</label>
+                <input class="input" type="text" id="email" name="email">
+                <br>                
+                <label for="id">Car Id:</label>
+                <input class="input" type="text" id="id" name="id">
+                <br>
+                <label for="">Rental Length (Days):</label>
+                <input class="length" type="number" id="rental-length" name="rental-length">
+                <br>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
     </main>
 
 
