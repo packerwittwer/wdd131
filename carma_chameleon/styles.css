@@ -132,11 +132,11 @@ div img {
 
 div div {
     border: 1px solid black;
-    background-color: #c2f261;
+    background-color: #efefef;
 }
 
 .car-info-home {
     padding-left: 10px;
     font-family: 'Grechen Fuemen';
-    background-color: #c2f261;
+    font-size: 1.2em;
 }
